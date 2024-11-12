@@ -1,3 +1,16 @@
+Для начала нужно будет разобраться с sql-подключением. В файле .env будут строчки
+"DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=testSql
+DB_USERNAME=root
+DB_PASSWORD=5455"
+поменяйте необходимые данные на вашу базу данных и пропишите
+php artisan migrate
+если отправило "nothing to migrate" напишите php artisan migrate:refrash
+Данные для логина админом
+email:wenz5455@gmail.com
+pass:5455
 Это laravel-проект, всё, что вам необходимо сделать - это запустить это через любую удобную программу при помощи комманды "artisan run serve".
 Лично я это делал через vs code - перетаскивал мышкой папку с проектом на рабочую зону vs code, сверху в меню "view" нажимал кнопку terminal,
 после чего убеждался, что я нахожусь в директории gndlfTest и прописывал вышеуказанную комманду "artisan run serve".
