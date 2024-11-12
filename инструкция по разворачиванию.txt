@@ -7,7 +7,7 @@ DB_USERNAME=root
 DB_PASSWORD=5455"
 поменяйте необходимые данные на вашу базу данных и пропишите
 php artisan migrate
-если отправило "nothing to migrate" напишите php artisan migrate:refrash
+если отправило "nothing to migrate" напишите php artisan migrate:refresh
 Данные для логина админом
 email:wenz5455@gmail.com
 pass:5455
