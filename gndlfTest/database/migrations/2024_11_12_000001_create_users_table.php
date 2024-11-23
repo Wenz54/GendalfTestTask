@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('role')->default('user'); // тут у нас миграция пользователей в табличку
         });
     }
 
@@ -28,7 +29,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('users');
-        Schema::dropIfExists('password_reset_tokens');
+        Schema::dropIfExists('password_reset_tokens'); // а вот это вот для откатов если надо
         Schema::dropIfExists('sessions');
     }
 };
